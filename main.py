@@ -1,6 +1,5 @@
 import pygame
 import os
-from pygame import mixer
 
 pygame.font.init()
 pygame.mixer.init()
@@ -171,23 +170,29 @@ def main(user):
             
 
         if win == "Game Tied!":
-            draw_win = WINNER_FONT.render("Game Tied", 1, RED)
-            WIN.blit(draw_win, (WIDTH//2 - 240, HEIGHT//2 - 20))
+            draw_win = WINNER_FONT.render("Game Tied", 1, WHITE)
+            WIN.blit(BG_IMG, (0, 0))
+            WIN.blit(LOGO, (WIDTH//2 - 274/2, 20))
+            WIN.blit(draw_win, (WIDTH//2 - 240, HEIGHT//2 - 50))
             pygame.display.update()
             pygame.time.delay(2000)
             main(user)
 
         if win == "Player 1 Won!":
-            draw_win = WINNER_FONT.render("Player 1 Won!", 1, RED)
-            WIN.blit(draw_win, (WIDTH//2 - 300, HEIGHT//2- 20))
+            draw_win = WINNER_FONT.render("Player 1 Won!", 1, WHITE)
+            WIN.blit(BG_IMG, (0, 0))
+            WIN.blit(LOGO, (WIDTH//2 - 274/2, 20))
+            WIN.blit(draw_win, (WIDTH//2 - 300, HEIGHT//2- 50))
             pygame.display.update()
             pygame.time.delay(2000)
             main(user)
             
 
         if win == "Player 2 Won!":
-            draw_win = WINNER_FONT.render("Player 2 Won!", 1, RED)
-            WIN.blit(draw_win, (WIDTH//2 - 300, HEIGHT//2 - 20))
+            draw_win = WINNER_FONT.render("Player 2 Won!", 1, WHITE)
+            WIN.blit(BG_IMG, (0, 0))
+            WIN.blit(LOGO, (WIDTH//2 - 274/2, 20))
+            WIN.blit(draw_win, (WIDTH//2 - 300, HEIGHT//2 - 50))
             pygame.display.update()
             pygame.time.delay(2000)
             main(user)
