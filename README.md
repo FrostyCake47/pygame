@@ -11,7 +11,7 @@ Enjoy the game!!!
 
 # Youtube Demo
 
-[![NEON XOX](https://imgur.com/a/ia7k1au)](https://www.youtube.com/watch?v=3U_fCju8nnA "NEON XOX")
+[![NEON XOX](http://img.youtube.com/vi/3U_fCju8nnA/0.jpg)](https://www.youtube.com/watch?v=3U_fCju8nnA "NEON XOX")
 # Libraries used
 Pygame, Os
 
